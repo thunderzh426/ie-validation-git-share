@@ -63,3 +63,21 @@ CREATE TABLE app_NlpApp2.crf_project (
 )
 
 insert into app_NlpApp2.crf_project values(1,1);
+
+drop table app_NlpApp2.frame_instance_data;
+CREATE TABLE app_NlpApp2.frame_instance_data (
+	frame_instance_id INT NOT NULL,
+	slot_id INT NOT NULL,
+	value TEXT NULL,
+	section_slot_number INT NULL DEFAULT 0,
+	element_slot_number INT NULL DEFAULT 0,
+	document_namespace VARCHAR(500) NULL DEFAULT NULL,
+	document_table VARCHAR(500) NULL DEFAULT NULL,
+	document_id INT NULL DEFAULT NULL,
+	annotation_id INT NULL DEFAULT NULL,
+	provenance VARCHAR(500) NULL DEFAULT NULL,
+	element_id INT NULL DEFAULT NULL,
+	v_scroll_pos INT NULL DEFAULT NULL,
+	scroll_height INT NULL DEFAULT NULL,
+	scroll_width INT NULL DEFAULT NULL
+)
