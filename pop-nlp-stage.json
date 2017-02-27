@@ -1,0 +1,60 @@
+{
+	name: "pop_nlp_stage",
+	type: "crf",
+	elements: [
+		{
+			name: "main_section",
+			display: "Main Section",
+			type: "section",
+			elements: [
+				{
+					name: "cancer_subtype",
+					display: "Cancer Subtype",
+					type: "text",
+					dataType: "string",
+					repeat: -1,
+					annotation: "cancer_subtype"
+				},
+				{
+					name: "clinical_stage",
+					display: "Clinical Stage",
+					type: "text",
+					dataType: "string",
+					repeat: -1,
+					annotation: "clinical_stage"
+				},
+				{
+					name: "pathology_stage",
+					display: "Pathology Stage",
+					type: "text",
+					dataType: "string",
+					repeat: -1,
+					annotation: "pathological_stage"
+				},
+				{
+					name: "biopsy",
+					display: "Type of biopsy",
+					type: "text",
+					dataType: "string",
+					repeat: -1,
+					annotation: "biopsy"
+				},
+				{
+					name: "metastatic_diagnosis_date",
+					display: "Metastatic Diagnosis Date",
+					type: "text",
+					dataType: "string",
+					annotation: "metastatic_diagnosis_date"
+				},
+				{
+					name: "platinum_containing_chemo",
+					display: "Has Received Platinum-containing Chemotherapy?",
+					type: "radio",
+					dataType: "string",
+					values: ["Yes", "No"],
+					annotation: "platinum_containing_chemo"
+				}
+			]
+		}
+	]
+}
